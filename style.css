@@ -1,40 +1,28 @@
-body{
-    margin:0px;
-}
-a {
-    color:black;
-}
-h1 {
-    font-size: 45px;
-    text-align: center;
-    border-bottom:1px solid gray;
-    margin:0px;
-    padding:20px;
-}
-ol{
-    border-right:1px solid gray;
-    width:100px;
-    margin:0px;
-    padding:20px;
-}
-#grid{
+@font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+#context #grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 1fr 1fr;
 }
-#grid ol{
-    padding-left:33px;
+#context {
+    font-family: 'ImcreSoojin', 'serif';
+    background: linear-gradient(rgb(253, 240, 242), rgb(228, 206, 209));
 }
-#grid #article{
-    padding-left:25px;
-}   
-@media(max-width:800px){
-    #grid{
-        display: block;
-     }
-    ol{
-        border-right:none;
-    }
-    h1 {
-    border-bottom:none;
-    }
+a{
+    text-decoration: none;
+    color: blue;
+}
+table td:nth-child(2) {
+    text-align:center;
+    vertical-align: middle;
+}
+caption{
+    margin: 10px;
+}
+p{
+    margin-left: 20px;
 }
